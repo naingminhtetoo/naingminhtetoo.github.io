@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgramMe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <section class="home" id="home">
+       <nav>
+           <ul class="menu">
+               <li><a href="#tips"  class="nav-item">Tips</a></li>
+               <li><a href="#blog"  class="nav-item">Blog</a></li>
+               <li><a href="#home" class="nav-item nav-title">ProgramMe</a></li>
+               <li><a href="#about"  class="nav-item">About</a></li>
+               <li><a href="#contact"  class="nav-item">Contact</a></li>
+           </ul>
+       </nav>
+       <div class="toggle">
+           <span></span>
+       </div>
+       <div class="mobile-menu">
+           <ul>
+               <li><a href="#tips" class="mobile-item">Tips</a></li>
+               <li><a href="#blog" class="mobile-item">Blog</a></li>
+               <li><a href="#about" class="mobile-item">About</a></li>
+               <li><a href="#contact" class="mobile-item">Content</a></li>
+           </ul>
+           <div class="close">
+              <i class="fa fa-close"></i>
+           </div>
+       </div>
+       <div class="home-panel">
+           <div class="home-content">
+               <h1>Talk is Cheap <br>
+                    Show me The Code!
+                </h1>
+                <button class="learn">Learn With Me</button>
+           </div>
+       </div>
+   </section> 
+   <section class="tips" id="tips">
+       <h2>Here's Some Tips</h2>
+       <div class="tips-content">
+           <div class="tips-box">
+                <i class="fa fa-coffee"></i>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora architecto, cum sunt mollitia at odit, excepturi consectetur soluta obcaecati totam illum laudantium magni incidunt labore placeat. Vero, eveniet incidunt.</p>
+                <button>View More</button>
+           </div>
+           <div class="tips-box">
+            <i class="fa fa-coffee"></i>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora architecto, cum sunt mollitia at odit, excepturi consectetur soluta obcaecati totam illum laudantium magni incidunt labore placeat. Vero, eveniet incidunt.</p>
+            <button>View More</button>
+           </div>
+           <div class="tips-box">
+            <i class="fa fa-coffee"></i>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora architecto, cum sunt mollitia at odit, excepturi consectetur soluta obcaecati totam illum laudantium magni incidunt labore placeat. Vero, eveniet incidunt.</p>
+            <button>View More</button>
+           </div>
+       </div>
+   </section>
+   <section class="about" id="about">
+       <div class="about-img"></div>
+       <div class="about-content">
+           <div class="about-box">
+               <h1>Web Developer</h1>
+               <h2>Hey There, I'm Albert Oo</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit laborum, officiis assumenda numquam saepe odit temporibus, 
+                vel aliquid consequatur accusantium ipsam cumque voluptates cupiditate, deserunt est rem hic vero?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum impedit quos quae quibusdam? Dolores quisquam corporis ex accusamus a maxime soluta dicta ullam aliquid quo, corrupti aliquam laboriosam in reprehenderit.</p>
+                <button>View More</button>
+           </div>
+       </div>
+   </section>
+   <section class="blog" id="blog">
+       <h2>Blog</h2>
+       <div class="blog-content">
+           <div class="blog-box">
+               <div class="blog-title blog1">How to be a Programmer</div>
+               <img src="images/img4.jpg" alt="">
+           </div>
+           <div class="blog-box">
+               <div class="blog-title blog2">How to be a Programmer</div>
+               <img src="images/img5.jpg" alt="">
+           </div>
+           <div class="blog-box">
+               <div class="blog-title blog3">How to be a Programmer</div>
+               <img src="images/img6.jpg" alt="">
+           </div>
+           <div class="blog-box">
+            <div class="blog-title blog4">How to be a Programmer</div>
+            <img src="images/img7.jpg" alt="">
+        </div>
+       </div>
+       <button>Read More Blog</button>
+   </section>
+   <section class="contact" id="contact">
+       <div class="contact-img"></div>
+       <div class="contact-content">
+           <div class="contact-me">
+               <h2>Contact Me</h2>
+               <div class="form-contact">
+                <input type="text" id="name" placeholder="Name" autocomplete="off">
+                <input type="email" id="email" placeholder="Email" autocomplete="off">
+                <textarea  id="txtarea"  rows="7" placeholder="Your Message" autocomplete="off"></textarea>
+               </div>
+               <button>Send</button>
+           </div>
+       </div>
+   </section>
+   <footer>
+       <div class="link">
+           <div class="link-item"><a href="#f"><i class="fa fa-facebook"></i></a></div>
+           <div class="link-item"><a href="#f"><i class="fa fa-twitter"></i></a></div>
+           <div class="link-item"><a href="#f"><i class="fa fa-github"></i></a></div>
+       </div>
+   </footer>
+   <div class="toTop">
+       <a href="#home"><i class="fa fa-angle-up"></i></a>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+   <script>
+      $(".toggle span").click(function() {
+        $(".mobile-menu").addClass("showMenu");
+      });
+      $(".close i").click(function() {
+        $(".mobile-menu").removeClass("showMenu");
+      });
+      $(".mobile-item").click(function() {
+        $(".mobile-menu").removeClass("showMenu");
+      });
+   </script>
+</body>
+</html>
