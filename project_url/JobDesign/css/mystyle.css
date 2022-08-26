@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #1a2b40;
+}
+
+body {
+  background-color: #f8f8f9;
+}
+
+nav {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #d72323;
+  text-shadow: 1px 1px #666565;
+}
+
+nav .nav-menu-close i {
+  font-size: 25px;
+  padding: 5px 7px;
+  border-radius: 3px;
+  color: #d72323;
+  display: none;
+}
+
+nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-menu .nav-list {
+  list-style-type: none;
+}
+
+nav .nav-menu .nav-list li {
+  display: inline-block;
+}
+
+nav .nav-menu .nav-list li .nav-item {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-left: 25px;
+  border-bottom: 0px solid #f8f8f9;
+}
+
+nav .nav-menu .nav-list li .nav-item:hover {
+  color: #d72323;
+  border-bottom: 3px solid #d72323;
+}
+
+nav .nav-menu i {
+  display: none;
+}
+
+.startPage {
+  background-image: url("../images/person-writing-on-white-paper-3815585.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.startPage::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .7;
+  position: absolute;
+  z-index: -1;
+}
+
+.startPage .page-content .page-content-box {
+  max-width: 450px;
+}
+
+.startPage .page-content .page-content-box h1,
+.startPage .page-content .page-content-box p,
+.startPage .page-content .page-content-box a {
+  color: #f8f8f9;
+  font-family: "Oswald", sans-serif;
+}
+
+.startPage .page-content .page-content-box h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.startPage .page-content .page-content-box p {
+  margin: 10px 0 35px 0;
+}
+
+.startPage .page-content .page-content-box a {
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: #d72323;
+  border-radius: 4px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -100px;
+  position: relative;
+  z-index: 4;
+}
+
+.service .service-box {
+  background-color: white;
+  height: 170px;
+  margin: 10 px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px #6e6d6d;
+          box-shadow: 0px 0px 10px #6e6d6d;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.service .service-box i {
+  font-size: 40px;
+  color: #d72323;
+}
+
+.service .service-box h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.service .service-box p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 12px;
+}
+
+.tips {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tips .row {
+  margin-bottom: 60px;
+}
+
+.tips h3 {
+  text-align: center;
+  color: #d72323;
+  padding: 50px 0;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+.tips .tips-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tips .tips-box i {
+  color: #d72323;
+  font-size: 40px;
+}
+
+.tips .tips-box span {
+  padding: 0px 10px;
+  font-size: 12px;
+}
+
+.about-us {
+  min-height: 500px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+.about-us h2 {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  padding-bottom: 20px;
+  color: #d72323;
+}
+
+.about-us p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin: 10px 0px;
+}
+
+.about-us .promotion {
+  margin: 20px;
+}
+
+.about-us .promotion p {
+  margin: 0;
+}
+
+.about-us .promotion p i {
+  color: #d72323;
+  font-weight: bold;
+}
+
+.order-us {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-image: url("../images/photo-of-people-doing-handshakes-3183197.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.order-us::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  opacity: .8;
+}
+
+.order-us h1,
+.order-us p {
+  font-family: "Oswald", sans-serif;
+  color: #f8f8f9;
+}
+
+.order-us h1 {
+  font-size: 40px;
+}
+
+.order-us p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+.order-us span {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f8f8f9;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-us span i {
+  color: #d72323;
+}
+
+.plan {
+  min-height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan .plan-content {
+  text-align: center;
+}
+
+.plan .plan-content h1 {
+  font-family: "Oswald", sans-serif;
+  color: #d72323;
+  padding-bottom: 20px;
+}
+
+.plan .plan-content .plan-text {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.plan .plan-content .price-item {
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan .plan-content .price-item .price-item-box {
+  background: #f8f8f9;
+  -webkit-box-shadow: 0 0 4px #a1a0a0;
+          box-shadow: 0 0 4px #a1a0a0;
+  margin: 10px;
+  padding: 0 30px;
+  border-radius: 5px;
+}
+
+.plan .plan-content .price-item .price-item-box .amount {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan .plan-content .price-item .price-item-box .amount h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #d72323;
+}
+
+.plan .plan-content .price-item .price-item-box .amount p {
+  font-size: 13px;
+}
+
+.plan .plan-content .price-item .price-item-box .amount p span,
+.plan .plan-content .price-item .price-item-box .amount p sup {
+  font-size: 40px;
+  color: #d72323;
+  font-family: "Oswald", sans-serif;
+}
+
+.plan .plan-content .price-item .price-item-box .feature {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan .plan-content .price-item .price-item-box .feature p {
+  font-size: 13px;
+}
+
+.plan .plan-content .price-item .price-item-box .feature p i {
+  color: #d72323;
+}
+
+.plan .plan-content .price-item .price-item-box .buy-panel {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan .plan-content .price-item .price-item-box .buy-panel a {
+  background-color: #d72323;
+  padding: 7px 15px;
+  color: #f8f8f9;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.plan .plan-content .price-item .price-item-box .buy-panel a i {
+  color: #f8f8f9;
+}
+
+.manager {
+  padding: 50px 0;
+  text-align: center;
+  background-image: url("../images/group-of-people-watching-on-laptop-1595385.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.manager::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  left: 0;
+  opacity: .8;
+  position: absolute;
+  z-index: -1;
+}
+
+.manager h2 {
+  font-family: "Oswald", sans-serif;
+  color: #f8f8f9;
+  font-size: 40px;
+}
+
+.manager p {
+  font-size: 13px;
+  padding: 20px 0;
+  color: #f8f8f9;
+}
+
+.manager .row img {
+  width: 100%;
+  height: 100%;
+}
+
+.manager .row .manager-info {
+  text-align: left;
+}
+
+.manager .row .manager-info a {
+  padding: 8px 15px;
+  background-color: #d72323;
+  color: #f8f8f9;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.team {
+  min-height: 600px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team h2 {
+  font-family: "Oswald", sans-serif;
+  color: #d72323;
+  font-size: 30px;
+}
+
+.team p.team-text {
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: #1a2b40;
+}
+
+.team .member img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.team .member h2 {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.team .member h3 {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.team .member p {
+  font-size: 12px;
+}
+
+.testimonial-panel {
+  background-color: white;
+}
+
+.testimonial-panel .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 400px;
+}
+
+.testimonial-panel .testimonial h1 {
+  padding: 20px 0;
+  font-family: "Oswald", sans-serif;
+  color: #d72323;
+  font-size: 30px;
+}
+
+.testimonial-panel .testimonial .testimonial-item {
+  background-color: #f8f8f9;
+  -webkit-box-shadow: 0 0 4px #a1a0a0;
+          box-shadow: 0 0 4px #a1a0a0;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.testimonial-panel .testimonial .testimonial-item h4 {
+  font-family: "Oswald", sans-serif;
+  color: #1a2b40;
+}
+
+.testimonial-panel .testimonial .testimonial-item p {
+  font-size: 12px;
+  padding: 15px 0;
+}
+
+.testimonial-panel .testimonial .testimonial-item span {
+  font-size: 12px;
+  color: #d72323;
+}
+
+.contact-panel {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/woman-wearing-white-v-neck-shirt-using-space-gray-iphone-6-225232.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-panel::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  opacity: .8;
+}
+
+.contact-panel .contact {
+  text-align: center;
+}
+
+.contact-panel .contact h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  font-weight: 600;
+  color: #f8f8f9;
+}
+
+.contact-panel .contact p {
+  font-size: 12px;
+  padding: 10px 0;
+  color: #f8f8f9;
+}
+
+.contact-panel .contact .contact-item {
+  padding: 20px 30px;
+}
+
+.contact-panel .contact .contact-item .address-type {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background-color: #d72323;
+}
+
+.contact-panel .contact .contact-item .address-type i {
+  color: #f8f8f9;
+  font-size: 20px;
+}
+
+.contact-panel .contact .contact-item h4 {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  padding-top: 20px;
+  color: #f8f8f9;
+}
+
+.contact-panel .contact .contact-item p {
+  padding: 0px;
+  font-size: 10px;
+}
+
+footer {
+  min-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer h4 {
+  font-family: "Oswald", sans-serif;
+  color: #1a2b40;
+}
+
+footer .social i {
+  color: #d72323;
+  padding: 0px 5px;
+}
+
+.gotop {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 4;
+  right: 20px;
+  bottom: 20px;
+  background-color: #d72323;
+  border-radius: 50%;
+}
+
+.gotop i {
+  color: #f8f8f9;
+  font-size: 20px;
+}
+/*# sourceMappingURL=mystyle.css.map */
