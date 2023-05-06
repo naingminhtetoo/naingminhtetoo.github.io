@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "fullpage.js": "^4.0.19",
+    "jquery": "^3.6.4",
+    "pagepiling.js": "^1.5.6"
+  }
+}
