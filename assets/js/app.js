@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#pagepiling').pagepiling({
-		anchors: ['About', 'Skills', 'Experiences'],
+		anchors: ['About', 'Skills', 'Experiences', 'Portfolio'],
     	menu: '#myMenu',
 
 		afterLoad: function(anchorLink, index){
@@ -13,8 +13,11 @@ $(document).ready(function() {
 			else if(anchorLink == 'Skills'){
 				$("#category li.skills").addClass("active");
 			}
-			else{
+			else if(anchorLink == 'Experiences'){
 				$("#category li.experiences").addClass("active");
+			}
+			else{
+				$("#category li.portfolio").addClass("active");
 			}
 		}
 	});

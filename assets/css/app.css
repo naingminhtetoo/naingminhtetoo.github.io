@@ -308,9 +308,8 @@ header {
 
 .open-leftpanel {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    right: -40px;
+    width: 50px;
+    height: 50px;
     background: var(--primary);
     color: var(--bg);
     font-weight: bold;
@@ -319,6 +318,7 @@ header {
     justify-content: center;
     align-items: center;
     top: 0;
+    right: -50px;
     display: none;
 }
 
@@ -371,6 +371,46 @@ header {
   
 
 /* svg end */
+
+
+.portfolio-content {
+    flex-wrap: wrap;
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.portfolio-me .row {
+    min-height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media query */
 
@@ -433,14 +473,15 @@ header {
         height: 40px;
         font-size: 12px;
     }
+
+    .portfolio-item img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 /* md */
 @media screen and (max-width:768px) {
-    .header nav {
-        padding-right: 20px;
-    }
-
     .left-panel {
         left: -100px;
     }
@@ -451,6 +492,7 @@ header {
 
     .about-me,
     .skills-me,
+    .portfolio-me,
     .experiences-me {
         padding-left: 0px;
     }
@@ -482,6 +524,22 @@ header {
     .exp-item-content {
         width: 450px;
     }
+
+    .portfolio-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header nav {
+        padding-right: 0px;
+    }
+
+    .skills-me {
+        padding-top: 100px;
+    }
+    .skills-title {
+        margin-bottom: 10px !important;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -501,8 +559,12 @@ header {
         top: 10px;
         left: 4px;
     }
+    /* .portfolio-item img {
+        width: 80px;
+        height: 80px;
+    } */
 
-    .my-info .description {
-        font-size: 16px;
+    .nav-item a {
+        font-size: 10px;
     }
 }
