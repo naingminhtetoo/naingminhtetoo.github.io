@@ -17,7 +17,7 @@ $(document).ready(function() {
 				$("#category li.experiences").addClass("active");
 			}
 			else{
-				$("#category li.portfolio").addClass("active");
+				$("#category li.portfolio").addClass("active ");
 			}
 		}
 	});
