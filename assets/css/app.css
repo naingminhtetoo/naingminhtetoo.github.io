@@ -7,6 +7,7 @@
     --secondary-900: #6b6960;
     --dark: #2d2b2b;
     --bg: #222121;
+    --light-white: #d8d7d7;
 }
 
 * {
@@ -271,6 +272,16 @@ header {
     letter-spacing: 5px;
 }
 
+.exp-item {
+    margin-bottom: 30px;
+}
+
+.exp-company {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--light-white);
+}
+
 .exp-item-content {
     width: 600px;
     padding-left: 60px;
@@ -286,7 +297,7 @@ header {
 .exp-map::after {
     content: "";
     width: 2px;
-    height: 300px;
+    height: 160px;
     background-color: var(--secondary-900);
     position: absolute;
     top: 15px;
