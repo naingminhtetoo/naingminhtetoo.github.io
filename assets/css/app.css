@@ -555,8 +555,17 @@ header {
 }
 
 @media screen and (max-width:576px) {
+    .my-photo {
+        padding-top: 40px;
+    }
+
+    .my-info {
+        padding-left: 30px;
+        padding-top: 65px;
+    }
+
     .exp-item-content {
-        width: 300px;
+        width: -webkit-fill-available;
         font-size: 14px;
     }
 
@@ -567,7 +576,7 @@ header {
 
     .exp-map::after {
         content: "";
-        height: 400px;
+        height: 150px;
         top: 10px;
         left: 4px;
     }
@@ -578,5 +587,9 @@ header {
 
     .nav-item a {
         font-size: 10px;
+    }
+
+    .exp-item-content {
+        padding-left: 30px;
     }
 }
