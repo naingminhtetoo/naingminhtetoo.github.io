@@ -19,9 +19,13 @@ npm run preview
 
 ## GitHub Pages
 
-Create a repository named `naingminhtetoo.github.io` for the root personal site, or use any repository name for a project site. Push this project to its `main` branch. Under **Settings → Pages → Build and deployment**, select **GitHub Actions**. The included workflow builds and publishes `dist`. Relative Vite asset paths and the base-aware CV link support both root and repository subpaths. No router/server rewrites are needed.
+This existing repository publishes to **https://naingminhtetoo.github.io/**. Under **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**. No custom domain is needed for this URL.
 
-Deployment has not been performed automatically. For Vercel, import the repository and select Vite; build command `npm run build`, output directory `dist`.
+The workflow in `.github/workflows/deploy.yml` runs on pushes to `main`, or manually from the Actions tab. It uses Node.js 22, installs the locked dependencies with `npm ci`, builds the application, uploads only `dist` as the Pages artifact, and deploys it using GitHub's official Pages actions. No `gh-pages` branch is needed. If the `github-pages` environment has branch restrictions, allow `main`.
+
+Vite uses `base: '/'` for this root URL. The profile image, favicon, and downloadable CV use this base; Vite copies `public/CV.pdf` to `dist/CV.pdf`, available at `/CV.pdf`. Navigation uses section anchors, with no React Router or server rewrites needed.
+
+After pushing deployment changes, wait for the **Deploy portfolio to GitHub Pages** workflow to succeed. Open the site and test **Download CV**, or visit **https://naingminhtetoo.github.io/CV.pdf** directly. If the old portfolio remains visible after deployment succeeds, hard-refresh the page. Local verification alone does not confirm a live deployment.
 
 ## Customize
 
