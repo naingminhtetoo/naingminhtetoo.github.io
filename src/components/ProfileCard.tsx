@@ -10,11 +10,11 @@ export default function ProfileCard() {
           <rect className="outline-runner" x="1" y="1" width="98" height="98" rx="4" pathLength="100" />
         </svg>
         <img
-          src={`${import.meta.env.BASE_URL}profile.png`}
+          src={`${import.meta.env.BASE_URL}profile.jpg`}
           alt={profile.name}
           className="profile-photo"
-          width="1792"
-          height="2390"
+          width="899"
+          height="1200"
           fetchPriority="high"
         />
         <div className="portrait-caption"><span className="location-dot" /> Hello, I'm NMHO.</div>

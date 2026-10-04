@@ -33,7 +33,7 @@ After pushing deployment changes, wait for the **Deploy portfolio to GitHub Page
 - `src/sections/`: hero, about, education, language, contest, and contact copy.
 - `src/index.css`: colors, typography, responsive layout, and animations.
 - `public/CV.pdf`: byte-for-byte copy of the original CV. Replace this when updating the CV.
-- `public/profile.png`: your profile photo, displayed by `src/components/ProfileCard.tsx` on desktop and mobile.
+- `public/profile.jpg`: compressed profile photo, displayed by `src/components/ProfileCard.tsx` on desktop and mobile. `public/profile.png` retains the original photo.
 - `src/hooks/useReveal.ts`: short section entrance animations; reduced-motion users see content without motion.
 - `index.html`: SEO metadata. Update `og:url` if using a different domain or repository path. Add an Open Graph image only when a real asset exists.
 
