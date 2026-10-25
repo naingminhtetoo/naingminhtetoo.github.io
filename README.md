@@ -19,9 +19,13 @@ npm run preview
 
 ## GitHub Pages
 
-Create a repository named `naingminhtetoo.github.io` for the root personal site, or use any repository name for a project site. Push this project to its `main` branch. Under **Settings → Pages → Build and deployment**, select **GitHub Actions**. The included workflow builds and publishes `dist`. Relative Vite asset paths support both root and repository subpaths. No router/server rewrites are needed.
+Live site: **https://naingminhtetoo.github.io/**
 
-Deployment has not been performed automatically. For Vercel, import the repository and select Vite; build command `npm run build`, output directory `dist`.
+Repository: https://github.com/naingminhtetoo/naingminhtetoo.github.io
+
+Pushing changes to `main` triggers the existing GitHub Actions workflow, which builds the portfolio and publishes `dist` to GitHub Pages. The Pages deployment source is **GitHub Actions**. Relative Vite asset paths also support a repository subpath. No router/server rewrites are needed. Generated `node_modules`, `dist`, and TypeScript build metadata are excluded from version control; the workflow installs dependencies from `package-lock.json`.
+
+For Vercel, import the repository and select Vite; build command `npm run build`, output directory `dist`.
 
 ## Customize
 
