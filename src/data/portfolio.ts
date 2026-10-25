@@ -4,34 +4,33 @@ export const profile = {
   location: "Yangon, Myanmar",
   github: "https://github.com/naingminhtetoo",
   linkedin: "https://www.linkedin.com/in/naing-min-htet-oo-19200a209",
-  cv: `${import.meta.env.BASE_URL}CV.pdf`,
 };
 export const experiences = [
   {
-    company: "VAC Myanmar Co., Ltd.",
-    role: "Software Engineer – Japan Assignment Trainee",
+    company: "VAC Myanmar Co., Ltd. (Tosco Cooperation)",
+    role: "Full-time employee",
     date: "Jan 2025 — Present",
     location: "Yangon, Myanmar",
     points: [
-      "Continued employment following the transition of Tosco Myanmar’s operations to VAC Myanmar.",
-      "Participating in full-time Japanese-language and workplace training in preparation for a planned assignment in Japan.",
+      "Transferred from Tosco Myanmar to VAC Myanmar following an organizational change.",
+      "Currently studying Japanese in preparation for work in Japan.",
     ],
   },
   {
     company: "Tosco Myanmar Co., Ltd.",
-    role: "Software Engineer",
+    role: "Software Engineer · Full-time",
     date: "Jun 2021 — Dec 2024",
     location: "Yangon, Myanmar",
     points: [
       "Developed web, mobile, and desktop applications for Japanese clients and internal business systems.",
       "Built and integrated REST APIs, developed databases, and implemented data migration and Excel exports.",
-      "Contributed across requirements analysis, implementation, unit and integration testing, deployment, and maintenance.",
+      "Contributed to requirements review, implementation, unit, integration, and system testing, and maintenance.",
       "Collaborated with project teams and supported junior developers.",
     ],
   },
   {
     company: "Sonic Star Co., Ltd.",
-    role: "Senior Web Developer · Part-time",
+    role: "Web Developer — Part-time",
     date: "May 2023 — Jul 2023",
     location: "Yangon, Myanmar",
     points: [
@@ -123,7 +122,6 @@ export const skills = [
       "Angular",
       "Ionic",
       "Bootstrap",
-      "Tailwind CSS",
       "Webix",
     ],
   },
@@ -138,7 +136,6 @@ export const skills = [
       "PHP",
       "Laravel",
       "Java",
-      "Node.js",
       "REST APIs",
     ],
   },
@@ -151,17 +148,28 @@ export const skills = [
       "MySQL",
       "Oracle Database",
       "Firebase",
-      "MongoDB",
     ],
   },
   {
-    title: "Mobile",
+    title: "Mobile & tools",
     icon: "▯",
-    items: ["Ionic", "Angular", "Android Studio", "Xcode", "Dart", "Flutter"],
+    items: ["Ionic", "Angular", "Visual Studio", "Visual Studio Code", "Git", "Swagger", "Postman", "Android Studio", "Xcode", "Eclipse"],
   },
 ];
 export const courses = [
   { name: "Advanced React", provider: "Meta via Coursera", year: "2023" },
   { name: "Ionic and Angular", provider: "Coursera", year: "2021" },
-  { name: "PHP and Laravel Development", provider: "MMS IT", year: "2021" },
+  { name: "Laravel Course / Web Development with PHP", provider: "MMS IT", year: "2021" },
+];
+
+// Confirmed qualifications supplied by the portfolio owner.
+export const japaneseQualifications = [
+  {
+    english: "Japanese Language NAT-TEST Level 1 — Passed",
+    japanese: "日本語NAT-TEST 1級 合格",
+  },
+  {
+    english: "Japanese-Language Proficiency Test (JLPT) N2 — Passed",
+    japanese: "日本語能力試験（JLPT）N2 合格",
+  },
 ];

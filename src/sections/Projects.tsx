@@ -1,6 +1,29 @@
 import Section from '../components/Section'
 import Icon from '../components/Icon'
 import { projects } from '../data/portfolio'
+import { useLanguage } from '../i18n/LanguageContext'
 export default function Projects() {
-  return <Section id="projects" number="03" label="Selected work" title="Projects I’ve worked on" intro="A few projects I helped build with my teams."><div className="projects-grid">{projects.map((project,i) => <article key={project.name} className={`project-card ${i === 0 ? 'featured' : ''}`}><div className="project-top"><span className="project-category">{project.category}</span><span className="project-number">0{i+1}</span></div><h3>{project.name}</h3><p className="project-description">{project.description}</p><div className="contribution"><h4>My contribution</h4><p>{project.contribution}</p></div><div className="tags">{project.technologies.map(t => <span key={t}>{t}</span>)}</div><div className="project-footer"><span>{project.date}</span>{project.githubUrl && <a href={project.githubUrl} aria-label={`${project.name} source on GitHub`}><Icon name="github"/></a>}{project.demoUrl && <a href={project.demoUrl}>Live demo <Icon name="arrow"/></a>}</div></article>)}</div><p className="project-note">These are company projects, so source code and demos aren’t publicly linked.</p></Section>
+  const { t } = useLanguage()
+  return (
+    <Section id="projects" number="03" {...t.projects.heading}>
+      <div className="projects-grid">
+        {projects.map((project, i) => {
+          const copy = t.projects.entries[project.name] ?? project
+          return <article key={project.name} className={`project-card ${i === 0 ? 'featured' : ''}`}>
+            <div className="project-top"><span className="project-category">{copy.category}</span><span className="project-number">0{i + 1}</span></div>
+            <h3 lang="en">{project.name}</h3>
+            <p className="project-description">{copy.description}</p>
+            <div className="contribution"><h4>{t.projects.contribution}</h4><p>{copy.contribution}</p></div>
+            <div className="tags" role="group" aria-label={t.projects.technologies}>{project.technologies.map(tech => <span key={tech}>{tech}</span>)}</div>
+            <div className="project-footer">
+              <span lang="en">{project.date}</span>
+              {project.githubUrl && <a href={project.githubUrl} aria-label={t.projects.sourceLabel(project.name)}><Icon name="github"/></a>}
+              {project.demoUrl && <a href={project.demoUrl}>{t.projects.demo}<Icon name="arrow"/></a>}
+            </div>
+          </article>
+        })}
+      </div>
+      <p className="project-note">{t.projects.note}</p>
+    </Section>
+  )
 }

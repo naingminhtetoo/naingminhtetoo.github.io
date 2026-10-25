@@ -1,4 +1,6 @@
 import { profile } from '../data/portfolio'
+import { useLanguage } from '../i18n/LanguageContext'
 export default function Footer() {
-  return <footer className="container footer"><div><a href="#home" className="footer-name">{profile.name}</a><p>Software Engineer / Full-Stack Developer</p></div><div><a href={profile.github}>GitHub</a><a href={profile.linkedin}>LinkedIn</a><span>© {new Date().getFullYear()} {profile.name}</span></div></footer>
+  const { t } = useLanguage()
+  return <footer className="container footer"><div><a href="#home" className="footer-name">{profile.name}</a><p>{t.common.softwareEngineer} / {t.common.fullStackDeveloper}</p></div><div><a href={profile.github} aria-label={t.common.githubLabel}>GitHub</a><a href={profile.linkedin} aria-label={t.common.linkedinLabel}>LinkedIn</a><span>© {new Date().getFullYear()} {profile.name}</span></div></footer>
 }

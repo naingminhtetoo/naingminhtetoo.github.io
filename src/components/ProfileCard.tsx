@@ -1,6 +1,8 @@
 import { profile } from '../data/portfolio'
+import { useLanguage } from '../i18n/LanguageContext'
 
 export default function ProfileCard() {
+  const { t } = useLanguage()
   return (
     <div className="profile-scene">
       <div className="portrait-dots" aria-hidden="true" />
@@ -17,10 +19,10 @@ export default function ProfileCard() {
           height="1200"
           fetchPriority="high"
         />
-        <div className="portrait-caption"><span className="location-dot" /> Hello, I'm NMHO.</div>
+        <div className="portrait-caption"><span className="location-dot" /> {t.profile.greeting}</div>
       </div>
       <span className="portrait-sticker sticker-code" aria-hidden="true">&lt;hello /&gt;</span>
-      <span className="portrait-sticker sticker-stack">Web · Mobile · Backend</span>
+      <span className="portrait-sticker sticker-stack">{t.profile.stack}</span>
       <span className="portrait-spark spark-one" aria-hidden="true">✳</span>
       <span className="portrait-spark spark-two" aria-hidden="true">+</span>
     </div>
