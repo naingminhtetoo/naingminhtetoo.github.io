@@ -68,7 +68,6 @@ export const translations: Record<Language, Translations> = {
       entries: {
         'VAC Myanmar Co., Ltd. (Tosco Cooperation)': { role: '正社員', date: '2025年1月 — 現在', points: [ '組織変更に伴い、Tosco MyanmarからVAC Myanmarへ転籍しました。', '現在は日本での勤務に向けて日本語を学んでいます。' ] },
         'Tosco Myanmar Co., Ltd.': { role: 'ソフトウェアエンジニア・正社員', date: '2021年6月 — 2024年12月', points: [ '日本の顧客向けおよび社内業務向けのWeb、モバイル、デスクトップアプリケーションを開発しました。', 'REST APIの開発・連携、データベース開発、データ移行、Excel出力機能の実装を担当しました。', '要件確認、実装、単体・結合・総合テスト、保守に携わりました。', 'プロジェクトチームと協力し、後輩開発者をサポートしました。' ] },
-        'Sonic Star Co., Ltd.': { role: 'Web開発者 — パートタイム', date: '2023年5月 — 2023年7月', points: [ 'PHPとLaravelを使用し、レスポンシブな旅行・ツアーWebサイトと管理ダッシュボードを開発しました。', 'FigmaとAdobe XDのデザインをWeb画面に実装し、アプリケーションの不具合、レイアウト、ユーザビリティの問題を修正しました。', '通常の勤務時間外にパートタイム業務として担当しました。' ] },
       },
     },
     projects: {
@@ -95,11 +94,6 @@ export const translations: Record<Language, Translations> = {
           category: 'フルスタックアプリケーション',
           description: 'フロントエンド画面、バックエンド機能、データベース設計を含む、飲食店向けセルフオーダーシステム。',
           contribution: 'アプリケーション開発とデータベース設計に参加し、5名の開発チームをサポートしました。',
-        },
-        'Travel & Tour Web Application': {
-          category: 'Webサイト・管理ダッシュボード',
-          description: 'Sonic Starで開発した、管理ダッシュボードを備えたレスポンシブな旅行・ツアーWebサイト。',
-          contribution: 'Webサイトとダッシュボードを開発し、FigmaとAdobe XDのデザインを実装して、レスポンシブレイアウトの問題を修正しました。',
         },
       },
     },

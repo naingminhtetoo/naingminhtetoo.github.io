@@ -28,17 +28,6 @@ export const experiences = [
       "Collaborated with project teams and supported junior developers.",
     ],
   },
-  {
-    company: "Sonic Star Co., Ltd.",
-    role: "Web Developer — Part-time",
-    date: "May 2023 — Jul 2023",
-    location: "Yangon, Myanmar",
-    points: [
-      "Developed a responsive travel and tour website and administration dashboard using PHP and Laravel.",
-      "Translated Figma and Adobe XD designs into web interfaces and resolved application defects, layout problems, and usability issues.",
-      "Completed this part-time role outside regular working hours.",
-    ],
-  },
 ];
 export interface Project {
   name: string;
@@ -97,16 +86,6 @@ export const projects: Project[] = [
     contribution:
       "Contributed to application development and database design, and supported a five-person development team.",
     technologies: ["PHP", "Laravel", "Vue.js", "Bootstrap", "MySQL"],
-  },
-  {
-    name: "Travel & Tour Web Application",
-    category: "Website & admin dashboard",
-    date: "May — Jul 2023",
-    description:
-      "A responsive travel and tour website with an administration dashboard, developed at Sonic Star.",
-    contribution:
-      "Built the website and dashboard, implemented Figma and Adobe XD designs, and resolved responsive-layout issues.",
-    technologies: ["PHP", "Laravel", "Figma", "Adobe XD"],
   },
 ];
 export const skills = [
