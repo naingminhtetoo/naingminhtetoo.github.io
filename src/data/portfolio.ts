@@ -3,7 +3,7 @@ export const profile = {
   email: "naingminhtetoo.dev@gmail.com",
   location: "Yangon, Myanmar",
   github: "https://github.com/naingminhtetoo",
-  linkedin: "https://www.linkedin.com/in/naing-min-htet-oo-19200a209",
+  linkedin: "https://www.linkedin.com/in/naingminhtetoo99/",
 };
 export const experiences = [
   {
